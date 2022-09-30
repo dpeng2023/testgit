@@ -24,4 +24,4 @@ see we're at master branch
 16) git checkout first_branch
 17) pwd to root testgit directory
 18) ls to see calendar folder, as we are on the first_branch directory and had committed it there
-19) switch to the master branch to commit /doc/todo2.txt
+19) switch to the master branch to add and commit /doc/todo2.txt
