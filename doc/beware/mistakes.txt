@@ -1,0 +1,5 @@
+1) Don't try git add on root folder; just do it for individual files as there maybe project files to ignore
+2) Can do git add on ./folder to get all files in subdirectories and files in folder
+note that add only applies to a FILE that exists, and doesn't need to be called for folders
+
+

@@ -1,0 +1,17 @@
+BASIC STAGING AND COMMIT
+1) cd testgit
+2) pwd
+3) git init
+3.5) git status
+4) cd static
+5) git add template1.html
+6) git status
+this adds template1.html and its static directory
+7) cd ..
+8) pwd
+9) git add ./doc
+10) git status
+this adds all files in doc and subdirectories
+- and note todo.txt is listed as modified, needs to be added again before commit
+11) git add module1.py
+12) git commit -m "My first commit"
