@@ -60,4 +60,4 @@ MERGE CONFLICT
 and edit, add, commit the file
 4.8) on commit, the vim editor comes up and you can add a commit message (like in (4) above)
 
-
+***** I love branches!  (on master after test_conflict branch commit)
