@@ -63,4 +63,9 @@ NOTE:  if local changes would be overwritten by merge; COMMIT changes or stash b
 and edit, add, commit the file
 4.8) on commit, the vim editor comes up and you can add a commit message (like in (4) above)
 
+<<<<<<< HEAD
 ***** I love branches!  (on master after test_conflict branch commit)
+=======
+***** Branches Rock! (on test_conflict branch)
+
+>>>>>>> test_conflict
