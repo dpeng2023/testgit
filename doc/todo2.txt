@@ -39,8 +39,25 @@ to ensure all commits are in on master
 to merge feature branch into integration branch
 may need to insert (i) comments and :wq! to exit editor
 5) git branch -v
-to see merge comments
+to see merge comment and should see a NEW ID that differs from first_branch ID as master moved UPSTREAM
+after first_branch, but before merge; OTHERWISE if no UPSTREAM changes, master branch ID should match
+the first_branch ID as a "fast-forwards merge occurs"
 6) ls
 now should see feature branch new calendar folder and fallbreak.txt file under testgit
 these should also show up in intellij editor as well
+7) git checkout first_branch
+8) ls /doc
+should NOT see todo2.txt since it was committed UPSTRREAM on master from the initial first_branch branch
+commit point
+9) git checkout master
+10) should see file in (8) as this was a commit on UPSTREAM master
+
+MERGE CONFLICT
+(from BASIC MERGING)
+4.5) merge conflict notice if SAME file was modified on both branches
+4.6) git status to view files in conflict
+4.7) look in files for <<<<< HEAD(master) ==== (other branch) >>>>>
+and edit, add, commit the file
+4.8) on commit, the vim editor comes up and you can add a commit message (like in (4) above)
+
 
