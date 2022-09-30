@@ -69,3 +69,7 @@ and edit, add, commit the file
 ***** Branches Rock! (on test_conflict branch)
 
 >>>>>>> test_conflict
+
+DELETE (MERGED) BRANCHES
+1) git checkout master
+2) git branch -d branch_name

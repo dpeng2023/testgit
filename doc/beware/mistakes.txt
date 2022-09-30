@@ -10,6 +10,8 @@ BASIC BRANCHING
 branch you just switched to.  So after switching branches; refresh or reopen the project in your editor
 to view the correct branch snapshot of files and directories!
 3) Always switch to the master branch before merging a feature branch into this integration branch
-
+4) Always switch to master branch before deleting a merged branch
+5) you can always recover a deleted branch with the commit ID displayed on delete:
+git branch <branch_name> <base_commit_ID>
 
 
