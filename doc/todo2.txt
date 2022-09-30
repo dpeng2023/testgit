@@ -25,3 +25,18 @@ see we're at master branch
 17) pwd to root testgit directory
 18) ls to see calendar folder, as we are on the first_branch directory and had committed it there
 19) switch to the master branch to add and commit /doc/todo2.txt
+12) git branch -v
+to see latest commit ID on master branch
+
+BASIC MERGING
+1) cd to /testgit root repo directory
+2) git checkout master
+   git branch
+to be ON the master integration target branch
+3) git status
+to ensure all commits are in on master
+4) git merge first_branch
+to merge feature branch into integration branch
+5) ls
+now should see calendar folder and fallbreak file under testgit
+

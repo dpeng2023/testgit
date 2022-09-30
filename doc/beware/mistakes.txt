@@ -5,5 +5,11 @@ note that add only applies to a FILE that exists, and doesn't need to be called 
 3) Don't remove a tracked file via the editor; do it with the git command to remove file
 
 BASIC BRANCHING
-1) Always switch to the master branch before create a new branch; to keep parallel work independent 
+1) Always switch to the master branch before creating a new branch; to keep parallel work independent
+2) Git rewrites your working directory to look like it did when you made the most recent commit on the
+branch you just switched to.  So after switching branches; refresh or reopen the project in your editor
+to view the correct branch snapshot of files and directories!
+3) Always switch to the master branch before merging a feature branch into this integration branch
+
+
 
