@@ -37,6 +37,10 @@ to be ON the master integration target branch
 to ensure all commits are in on master
 4) git merge first_branch
 to merge feature branch into integration branch
-5) ls
-now should see calendar folder and fallbreak file under testgit
+may need to insert (i) comments and :wq! to exit editor
+5) git branch -v
+to see merge comments
+6) ls
+now should see feature branch new calendar folder and fallbreak.txt file under testgit
+these should also show up in intellij editor as well
 
