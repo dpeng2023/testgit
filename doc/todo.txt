@@ -15,3 +15,4 @@ this adds all files in doc and subdirectories
 - and note todo.txt is listed as modified, needs to be added again before commit
 11) git add module1.py
 12) git commit -m "My first commit"
+13) git status
