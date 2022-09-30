@@ -54,6 +54,9 @@ commit point
 
 MERGE CONFLICT
 (from BASIC MERGING)
+4) git merge test_conflict
+from master
+NOTE:  if local changes would be overwritten by merge; COMMIT changes or stash before doing merge
 4.5) merge conflict notice if SAME file was modified on both branches
 4.6) git status to view files in conflict
 4.7) look in files for <<<<< HEAD(master) ==== (other branch) >>>>>
