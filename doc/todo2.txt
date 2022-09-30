@@ -1,0 +1,27 @@
+BASIC BRANCHING
+1) pwd goto root testgit directory
+2) git branch first_branch
+to create a new branch off the current master commited
+3) git branch
+to see we are at default master branch
+4) git checkout first_branch
+5) git branch
+to see we are now switched to first_branch
+6) create /calendar/fallbreak.txt file
+7) cd calendar and git add above file
+8) git commit -m "first branch commit"
+9) pwd
+to get to the root testgit/calendar directory
+10) ls to see fallbreak.txt file
+11) git checkout master
+12) git branch
+get an error, as there is no current working /calendar directory in the master branch
+13) cd .. to goto /testgit
+14) git branch
+see we're at master branch
+15) ls
+*** WE DO NOT see calendar folder, as we didn't commit it on master branch
+16) git checkout first_branch
+17) pwd to root testgit directory
+18) ls to see calendar folder, as we are on the first_branch directory and had committed it there
+19) switch to the master branch to commit /doc/todo2.txt
