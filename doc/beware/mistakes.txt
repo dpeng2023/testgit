@@ -2,11 +2,11 @@ BASIC STAGING AND COMMITS
 1) Don't try git add on root folder; just do it for individual files as there maybe project files to ignore
 2) Can do git add on ./folder to get all files in subdirectories and files in folder
 note that add only applies to a FILE that exists, and doesn't need to be called for folders
-3) Don't remove a tracked file via the editor; do it with the git command to remove file
+3) Don't remove a tracked file via the editor; do it with the git rm <filename> and git commit
 
 BASIC BRANCHING
 1) Always switch to the master branch before creating a new branch; to keep parallel work independent
-2) Git rewrites your working directory to look like it did when you made the most recent commit on the
+2) Git rewrites your working directory (and index) to look like it did when you made the most recent commit on the
 branch you just switched to.  So after switching branches; refresh or reopen the project in your editor
 to view the correct branch snapshot of files and directories!
 3) Always switch to the master branch before merging a feature branch into this integration branch

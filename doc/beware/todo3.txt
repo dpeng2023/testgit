@@ -1,0 +1,15 @@
+DIFF operations (only on TRACKED, or already-added files)
+1) git diff
+to compare ---index +++working directory
+2) git diff --staged
+to compare ---committed +++index
+3) git diff int_branch1 feat_branch2
+to compares the 'tip' commit on each branch
+---integration +++feature
+4) git diff <older commit ID1> <latest commit ID2>
+where IDs come from ID log of branch:
+git log --oneline --all --graph
+IDs don't have to be parent and child; or even on the same branch
+HEAD tells you the latest commit for the branch you're on
+
+
