@@ -1,0 +1,48 @@
+WORKING with REMOTES
+
+1) Clone repo from GitHub
+- Login to GitHub
+- goto repo to Fork to my account
+https://github.com/looselytyped/working-with-remotes
+- goto my account Fork
+https://github.com/dpeng2023/working-with-remotes
+Choose CODE, HTTPS, then copy the URL
+https://github.com/dpeng2023/working-with-remotes.git
+- create local folder to house repo
+~/github/headfirst-git/ch05
+- do
+git clone https://github.com/dpeng2023/working-with-remotes.git
+*** FORK NOT NEEDED IF GIVEN PERMISSIONS TO COLLABORATE, then direct cloning OK
+
+2) Personal Access Token generated and saved under
+~/github/token.txt
+
+3) git config --global push.default simple
+
+4) git push
+- enter GitHub Username
+- enter Personal Access Token
+
+5) goto remote GitHub website from (1) to verify files pushed to remote
+
+6) DEFAULT is git push origin
+git remote -v shows URL where remote origin lives
+
+7) create a new branch, commit changes on it, then push it to remote
+git push -u origin feat-a
+
+**** On solo projects, do merge to master locally, then push master to remote,
+**** On joint projects, push up branch to remote and submit a pull-merge request
+
+8) On GitHub for your remote repo:  goto pull request tab; hit button for new pull request
+- choose master branch for the base or target branch to merge into (one with your GitHub username)
+- choose feature branch for the source branch you want to merge from
+- hit button for create new pull request
+
+9) In Pull Request created; View Commits, add Review Comments
+
+10) In Pull Request, hit button to Merge pull request
+
+11) Hit button to delete feat-a branch at confirmation
+
+12) Now we need to update our LOCAL repo with the REMOTE merge and branch deletion!

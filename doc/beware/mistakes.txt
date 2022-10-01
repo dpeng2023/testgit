@@ -3,6 +3,7 @@ BASIC STAGING AND COMMITS
 2) Can do git add on ./folder to get all files in subdirectories and files in folder
 note that add only applies to a FILE that exists, and doesn't need to be called for folders
 3) Don't remove a tracked file via the editor; do it with the git rm <filename> and git commit
+4) Don't move-rename a tracked file via the editor; do it with git mv file1 dir2/file2 and git commit
 
 BASIC BRANCHING
 1) Always switch to the master branch before creating a new branch; to keep parallel work independent
