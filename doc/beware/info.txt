@@ -1,0 +1,4 @@
+1) git status
+2) git branch -a -vv
+3) git <command> --help or -h for abbreviation
+4) git remote -v

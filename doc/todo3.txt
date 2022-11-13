@@ -11,5 +11,6 @@ where IDs come from ID log of branch:
 git log --oneline --all --graph
 IDs don't have to be parent and child; or even on the same branch
 HEAD tells you the latest commit for the branch you're on
+eg git diff HEAD~1 HEAD  pror commit with latest commit
 
 

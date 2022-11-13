@@ -4,6 +4,7 @@ BASIC STAGING AND COMMITS
 note that add only applies to a FILE that exists, and doesn't need to be called for folders
 3) Don't remove a tracked file via the editor; do it with the git rm <filename> and git commit
 4) Don't move-rename a tracked file via the editor; do it with git mv file1 dir2/file2 and git commit
+5) always do git branch before git commit -m to ensure you are on the correct branch before a commit
 
 BASIC BRANCHING
 1) Always switch to the master branch before creating a new branch; to keep parallel work independent
@@ -14,5 +15,24 @@ to view the correct branch snapshot of files and directories!
 4) Always switch to master branch before deleting a merged branch
 5) you can always recover a deleted branch with the commit ID displayed on delete:
 git branch <branch_name> <base_commit_ID>
+6) Always switch to a new branch after you create it to work on a feature; so you don't corrupt
+master
+*** BEFORE a commit on the WRONG master branch; you can use
+git stash
+- to save working directory and index
+git checkout feature-branch
+git stash pop --index
+-- to recover changes to the current branch
 
-
+BASIC MERGING
+1) Always switch to TARGET master branch or integration branch before a
+git merge (from local branch to master)
+AVOID git pull (from remote master to local)
+2) INSTEAD use git fetch
+can be executed from any branch (but choose master just to be clear)
+only updates local remote tracking branches without affecting local branches
+THEN use
+git diff master origin/master
+git checkout master
+git merge origin/master
+this allows git push without error message that tip of branch is behind origin/master

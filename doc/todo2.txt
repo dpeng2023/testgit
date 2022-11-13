@@ -1,7 +1,9 @@
 BASIC BRANCHING
 1) pwd goto root testgit directory
+1.5) git branch
+to see we are at default master branch
 2) git branch first_branch
-to create a new branch off the current master commited
+to create a new branch off the current master committed
 3) git branch
 to see we are at default master branch
 4) git checkout first_branch
