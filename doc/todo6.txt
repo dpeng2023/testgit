@@ -1,0 +1,18 @@
+ADDING A NEW REPO TO REMOTE GITUB
+
+1) cd to root local project folder
+2) git init
+   git add to each file or ./dir
+   git commit -m "initial commit"
+3) login to GitHub account
+   at top right of page, click '+' for New Repository
+   name it with same project name as local project
+   click Create Repository
+   copy the link below the file:
+   https://gitub.com/yourname/yourproject.git
+ 4) back to root local project folder
+ git remote add origin <URL from (3)>
+ git remote -v
+ 5)
+ git push -u origin main
+ 6) Goto GitHub and refresh to see your repo there
